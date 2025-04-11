@@ -99,8 +99,8 @@ begin
         );
 	
 	-- CONCURRENT STATEMENTS ----------------------------
-	an(3) <= '0';
-	an(2 downto 0) <= (others => '1');
+	an(0) <= '0';
+	an(3 downto 1) <= (others => '1');
 	seg(6 downto 0) <= s_seg;
 	-- LED 15 gets the FSM slow clock signal. The rest are grounded.
 	led(15) <= w_clk;
